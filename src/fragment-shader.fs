@@ -13,7 +13,7 @@ void main(void){
   float offset = (1.0 / length(vec2(p.x - p_mouse.x, p.y + p_mouse.y))) * noise / 2.0;
 
   vec3 rgb_color = vec3(
-    0.0,
+    0.4,
     (snoise(vec3(p.x / 2.0, p.y / 2.0, u_time / 1.2)) + 1.0) / 2.0 + 0.1 + offset,
     (snoise(vec3(p.x / 0.0, p.y / 0.0, u_time / 1.0)) + 1.0) / 2.0 + offset
   );
